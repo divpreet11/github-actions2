@@ -6,10 +6,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
-    strategy:
-      matrix:
-        python-version: [3.9]
   
     steps:
       - name: checkout
@@ -18,7 +14,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: ${{matrix.python-version}}
+          python-version: '3.9'
 
       - name: run python program
         run: python index.py
