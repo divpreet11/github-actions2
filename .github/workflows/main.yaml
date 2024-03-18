@@ -17,8 +17,9 @@ jobs:
 
       - name: setup python
         uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python-version}}
 
       - name: run python program
         run: python index.py
-        with:
-          python-version: ${{matrix.python-version}}
+        
