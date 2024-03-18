@@ -11,10 +11,10 @@ jobs:
       - name: checkout content
         uses: actions/checkout@v2
 
-      - name: setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.11'
+      # - name: setup python
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: '3.11'
 
       - name: run python program
         run: python index.py
