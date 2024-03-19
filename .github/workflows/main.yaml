@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 
 jobs:
-  Runs the Python Program:
+  Runs_the_Python_Program:
     # runs-on: self-hosted
     runs-on: ubuntu-latest
   
@@ -21,7 +21,7 @@ jobs:
         run: python index.py
 
   Example_environment_variables:
-    needs: Runs the Python Program
+    needs: Runs_the_Python_Program:
     runs-on: ubuntu-latest
   
     env: 
