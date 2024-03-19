@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
   
     env: 
-      First_name = "Divpreet"
+      First_name: "Divpreet"
     
     steps:
       - name: Accessing the environment variable
