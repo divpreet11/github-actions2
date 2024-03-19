@@ -31,8 +31,8 @@ jobs:
       - name: Use a secret variable
         env: 
           SECRET_TOKEN: ${{secrets.MY_SECRET_TOKEN}}
-          run: |
-              echo "The secret token is $SECRET_TOKEN
+        run: |
+          echo "The secret token is $SECRET_TOKEN
     
     
         
