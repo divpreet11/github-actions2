@@ -40,8 +40,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use a secret variable
-        env: 
-          SECRET_TOKEN: ${{secrets.MY_SECRET_TOKEN}}
+        
+    env: 
+      SECRET_TOKEN: ${{secrets.MY_SECRET_TOKEN}}
         run: |
           echo "The secret token is $SECRET_TOKEN"
     
