@@ -29,8 +29,8 @@ jobs:
     env: 
       First_name = "Divpreet"
     
-    - name: Accessing the environment variable
-      run: echo ${{env.First_name}}
+      - name: Accessing the environment variable
+        run: echo ${{env.First_name}}
 
   secret_example:
     needs: Example_environment_variables
