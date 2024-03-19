@@ -21,7 +21,7 @@ jobs:
         run: python index.py
 
   Example_environment_variables:
-    needs: Runs_the_Python_Program:
+    needs: Runs_the_Python_Program
     runs-on: ubuntu-latest
   
     env: 
