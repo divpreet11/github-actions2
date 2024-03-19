@@ -44,7 +44,7 @@ jobs:
         env: 
           SECRET_TOKEN: ${{secrets.MY_SECRET_TOKEN}}
         run: |
-          echo "The secret token is $SECRET_TOKEN"
+            echo "The secret token is $SECRET_TOKEN"
     
     
         
