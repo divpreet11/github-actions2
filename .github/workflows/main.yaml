@@ -28,7 +28,7 @@ jobs:
       First_name = "Divpreet"
     
     steps:
-    - name: Accessing the environment variable
+      - name: Accessing the environment variable
         run: echo ${{env.First_name}}
 
   secret_example:
