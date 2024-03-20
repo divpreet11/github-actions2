@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
   
       - name: run python program
-        run: python indexx.py
+        run: python index.py
 
   Example_environment_variables:
     needs: Runs_the_Python_Program
