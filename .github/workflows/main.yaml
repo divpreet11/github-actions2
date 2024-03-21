@@ -17,11 +17,12 @@ jobs:
           python-version: '3.11'
  
       - name: run python program
-        run: python index.py
+        run: python indexx.py
  
   Example_environment_variables:
     needs: Runs_the_Python_Program
     runs-on: ubuntu-latest
+    if: ${{always()}}
  
     env:
       First_name: "Divpreet"
@@ -44,7 +45,3 @@ jobs:
           SECRET_TOKEN: ${{secrets.MY_SECRET_NAME}}
         run: |
             echo "The secret token is $SECRET_TOKEN"
-   
-   
-       
- 
